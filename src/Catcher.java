@@ -6,7 +6,7 @@
  *               int skill:       Combination of various user performance statistics
  *               String title:    Title given based off of skill
  * @author: Elliott Lowman
- * @date: October 23, 2024
+ * @date: October 24, 2024
  */
 
 import java.io.*;

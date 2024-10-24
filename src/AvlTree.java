@@ -1,3 +1,10 @@
+/*
+ * @file: AvlTree.java
+ * @description: As stated below
+ * @author: Elliott Lowman
+ * @date: October 24, 2024
+ */
+
 // AvlTree class
 //
 // CONSTRUCTION: with no initializer
@@ -165,6 +172,7 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>> {
 
     // Assume t is either balanced or within one of being balanced
     private AvlNode<AnyType> balance( AvlNode<AnyType> t ) {
+        // determines which case to implement
         if(t.balanceLevel > 0) {
             if(getBalanceLevel(t.right) >= 0) {
                 t = rotateWithRightChild(t);
@@ -294,6 +302,7 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>> {
      * @param t the node that roots the tree.
      */
     private void printTree( AvlNode<AnyType> t ) {
+        // inorder implementation
         if(t != null) {
             printTree(t.left);
             System.out.println(t.element.toString());

@@ -1,3 +1,10 @@
+/*
+ * @file: Node.java
+ * @description: This class contains node operations, as used in BST.java
+ * @author: Elliott Lowman
+ * @date: October 24, 2024
+ */
+
 class Node<T extends Comparable<T>> implements Comparable<T>{
 
     // Implement the constructor
